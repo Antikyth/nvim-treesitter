@@ -53,6 +53,7 @@ local default_map = {
   ["keyword.return"] = "TSKeywordReturn",
 
   ["label"] = "TSLabel",
+  ["label.lifetime-only-in-rust"] = "TSLabelRustLifetime",
 
   ["method"] = "TSMethod",
   ["method.call"] = "TSMethodCall",
@@ -224,6 +225,7 @@ function M.set_default_hlgroups()
     TSConditional = { link = "Conditional", default = true },
     TSRepeat = { link = "Repeat", default = true },
     TSLabel = { link = "Label", default = true },
+    TSLabelRustLifetime = { link = "TSLabel", default = true },
     TSOperator = { link = "Operator", default = true },
     TSKeyword = { link = "Keyword", default = true },
     TSKeywordFunction = { link = "Keyword", default = true },
